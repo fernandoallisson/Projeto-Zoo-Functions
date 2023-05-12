@@ -6,7 +6,7 @@ const getSpeciesByIds = (...ids) => {
   }
   return (data.species
     .filter(({ id }) => ids
-      .some((elem) => elem === id)));
+      .some((eleme) => eleme === id)));
 };
 
 module.exports = getSpeciesByIds;
