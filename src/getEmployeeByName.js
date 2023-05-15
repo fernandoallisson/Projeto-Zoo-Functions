@@ -7,5 +7,4 @@ const getEmployeeByName = (employeeName) => {
     return {};
   } return matchingEmployers[0];
 };
-console.log(getEmployeeByName('Wishart'));
 module.exports = getEmployeeByName;
