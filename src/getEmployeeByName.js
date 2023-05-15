@@ -5,7 +5,7 @@ const getEmployeeByName = (employeeName) => {
     firstName === employeeName || lastName === employeeName);
   if (matchingEmployers.length === 0) {
     return {};
-  } return matchingEmployers;
+  } return matchingEmployers[0];
 };
-
+console.log(getEmployeeByName('Wishart'));
 module.exports = getEmployeeByName;
