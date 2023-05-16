@@ -4,9 +4,6 @@ const data = require('../data/zoo_data');
 const isManager = (id) => data.employees.some(({ managers }) => managers.includes(id));
 
 const nomes = (id) => {
-  if (!isManager(id)) {
-    throw new Error('O id inserido não é de uma pessoa colaboradora gerente!');
-  }
   const nome = data.employees
     .filter(({ managers }) => managers.some((item) => item === id))
     .map(({ firstName, lastName }) => `${firstName} ${lastName}`);
@@ -14,11 +11,10 @@ const nomes = (id) => {
 };
 
 const getRelatedEmployees = (managerId) => {
-  try {
-    return nomes(managerId);
-  } catch (error) {
-    return error.message;
+  if (!isManager(managerId)) {
+    throw new Error('O id inserido não é de uma pessoa colaboradora gerente!');
   }
+  return nomes(managerId);
 };
 
 module.exports = { isManager, getRelatedEmployees };
