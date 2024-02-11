@@ -1,13 +1,17 @@
 # :construction: Projeto Zoo Functions :construction:
 O projeto consiste em uma série de funções destinadas a fornecer informações sobre um zoológico. Cada função desempenha um papel específico na obtenção e manipulação de dados relacionados aos animais, funcionários e funcionamento do zoológico. Aqui está uma visão geral das funções fornecidas:
 
-## countEntrants: Esta função conta o número de crianças, adultos e idosos com base em uma lista de entradas, onde cada entrada é um objeto contendo a idade de um visitante.
+## countEntrants: 
+Esta função conta o número de crianças, adultos e idosos com base em uma lista de entradas, onde cada entrada é um objeto contendo a idade de um visitante.
 
-## calculateEntry: Calcula o custo total da entrada com base no número de visitantes de diferentes faixas etárias e nos preços definidos para cada faixa etária.
+## calculateEntry: 
+Calcula o custo total da entrada com base no número de visitantes de diferentes faixas etárias e nos preços definidos para cada faixa etária.
 
-## countAnimals: Conta o número de animais de diferentes espécies no zoológico, com a opção de filtrar por sexo.
+## countAnimals: 
+Conta o número de animais de diferentes espécies no zoológico, com a opção de filtrar por sexo.
 
-## getAnimalMap: A função ainda não foi implementada, mas provavelmente retornaria um mapa ou layout do zoológico, mostrando a localização de diferentes espécies de animais.
+## getAnimalMap:
+A função ainda não foi implementada, mas provavelmente retornaria um mapa ou layout do zoológico, mostrando a localização de diferentes espécies de animais.
 
 ## getAnimalsOlderThan: 
 Verifica se todos os animais de uma determinada espécie têm uma idade maior que a especificada.
